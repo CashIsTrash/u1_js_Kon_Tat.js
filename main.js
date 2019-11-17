@@ -24,9 +24,15 @@ if (key.keyCode == "68")
     drawCard_Player();
     if(playerScore == 21) // om spelare drar 21. vinn genast
          alert('Congratulations you win!\nComputer score: '+computerScore+'\nPlayer score: '+playerScore);
-    if (playerScore>=22) // om spelaren drar mer än 21 förlåra genast    
+   else if (playerScore>=22) // om spelaren drar mer än 21 förlåra genast    
          alert('Haha you loose!\nComputer score: '+computerScore+'\nPlayer score: '+playerScore);
+    else if (computerScore == 21)
+        alert('Haha you loose!\nComputer score: '+computerScore+'\nPlayer score: '+playerScore);
 
+    else  if (computerScore>=22) // om spelaren drar mer än 21 förlåra genast    
+    alert('Congratulations you win!\nComputer score: '+computerScore+'\nPlayer score: '+playerScore);
+    
+    
     if (key.keyCode == "83"){ // trycker man på S tanget så spelaren drar inte längre kot
     console.log('Player stopped!');
     console.log('');
